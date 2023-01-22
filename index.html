@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>Library</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div id="addNewBookForm">
+      <form action="">
+        <h1>Add new book</h1>
+        <input type="text" placeholder="Title" required /><input
+          type="text"
+          placeholder="Author"
+          required
+        /><input type="number" placeholder="Pages" required />
+        <div class="group">
+          <label for="read">Have you read it?</label>
+          <input
+            class="checkbox"
+            type="checkbox"
+            name="read"
+            id="read"
+            value="read"
+          />
+        </div>
+        <button class="submit">Submit</button>
+      </form>
+    </div>
+
+    <div id="container">
+      <div class="header"><p>library</p></div>
+      <div class="main">
+        <div class="addNew"><button class="addNewBook">+ Add Book</button></div>
+        <div class="books"></div>
+      </div>
+      <div class="footer"><p>Copyright © 2023 BMyka</p></div>
+    </div>
+  </body>
+</html>
